@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Introduction To jquery UI</title>
+        <link rel="stylesheet" href="code/Drggable.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <h3>Introduction Of Dragable Feature</h3>
+           <div>
+               <div class="Cube">
+                  <h3>Cube 1</h3>
+               </div>
+               
+               <div class="Cube">
+                  <h3>Cube 1</h3>
+               </div>
+               
+           </div>
+           
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+            $(".Cube").draggable({
+                //axis:"x",
+                containment:"document",
+                cursor:"grabbing",
+                opacity:0.5,
+                //grid:[300,300],
+                snap:true,
+                snapTolrence:1000
+            });
+           
+          
+        
+        </script>
+
+   
+</html>

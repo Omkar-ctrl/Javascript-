@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Mouseover & Mouseout</title>
+        <script type="text/javascript">
+        function form()
+        {
+            var user=document.getElementById("U");
+            var pass=document.getElementById("P");
+            if(user.value.trim()=="")
+            {
+                
+                user.style.border="solid 4px red";
+                document.getElementById("label").style.visibility="visible";
+                return false;
+            }
+            else if(pass.value.trim()=="")
+            {
+                
+                pass.style.border="solid 4px green"
+                document.getElementById("label1").style.visibility="visible";
+                return false;
+
+            }
+            else if(pass.value.trim().length<5)
+            {
+                
+                return false;
+
+            }
+            else 
+            {
+                return true;
+
+            }
+
+
+
+        }       
+        </script>
+        <body>
+            <form onsubmit="return form()" action="message.html">
+                <input id="U" placeholder="Username" type="text"/>
+                <label id="label" style="color: red; visibility: hidden;">Invalid</label>
+                <br><br>
+
+                <input id="P" placeholder="Password" type="password"/>
+                <label id="label1" style="color: red; visibility: hidden;">Invalid</label><br><br>
+                <button  onclick="form()" type="submit">Submit</button>
+            </form>
+            
+
+        </body>
+
+    </head>
+</html>

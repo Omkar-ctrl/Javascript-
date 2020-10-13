@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Cellphone</title>
+        <script type="text/javascript">
+        function form()
+        {
+            var text=document.getElementById("text1").value;
+         
+            var regx=/[7-9]\d{9}/; 
+            if(regx.test(text))
+            {
+                
+                document.getElementById("lbl").innerHTML="Valid";
+                document.getElementById("lbl").style.visibility="visible";
+                document.getElementById("lbl").style.color="green";
+                
+            }
+           
+            else 
+            {
+                document.getElementById("lbl").innerHTML="InValid";
+                document.getElementById("lbl").style.visibility="visible";
+                document.getElementById("lbl").style.color="red";
+                
+            }
+
+
+
+        }       
+        </script>
+        <body>
+                <form>
+                <input id="text1" placeholder="Cellphone" type="text"/>
+                <label id="lbl" style="color: red; visibility: hidden;">Invalid</label><br><br>
+                <button  onclick="form()" type="button">Submit</button>
+                </form>
+            
+
+        </body>
+
+    </head>
+</html>

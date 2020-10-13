@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Mouseover & Mouseout</title>
+        <script type="text/javascript">
+        function form()
+        {
+            var user=document.getElementById("U");
+            var pass=document.getElementById("P");
+            if(user.value.trim()=="" || pass.value.trim()=="")
+            {
+                alert("No blanks allowed");
+                return false;
+            }
+            else
+            {
+                return true;
+
+            }
+
+        }
+        
+
+        </script>
+        <body>
+            <form onsubmit="return form()" action="message.html">
+                <input id="U" placeholder="Username" type="text"/><br>
+                <input id="P" placeholder="Password" type="password"/><br>
+                <button  onclick="form()" type="submit">Submit</button>
+            </form>
+            
+
+        </body>
+
+    </head>
+</html>

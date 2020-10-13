@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Introduction To jquery UI</title>
+        <link rel="stylesheet" href="code/tooltip.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <div id="first">
+                <h3>Introduction Of Tooltip </h3>
+                <img src="Imgaes/image.png" width="200px" title="Omkar" id="img"> 
+           </div>
+           
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+            $("img").tooltip({
+            track:true,
+            content:"Omkar is the Best",
+            show:{effect:"explode",duration:1000},
+            hide:{effect:"blind",duration:1000}
+            });
+        
+        </script>
+
+   
+</html>

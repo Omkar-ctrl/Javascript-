@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Mouseover & Mouseout</title>
+        <script type="text/javascript">
+        function form()
+        {
+            var user=document.getElementById("U");
+            var pass=document.getElementById("P");
+            if(user.value.trim()=="")
+            {
+                alert("No blanks allowed");
+                uname.style.border="solid 3px red";
+                return false;
+            }
+            else if(pass.value.trim()=="")
+            {
+                alert("Blank password")
+                return false;
+
+            }
+            else if(pass.value.trim().length<5)
+            {
+                alert("Password is too short")
+                return false;
+
+            }
+            else 
+            {
+                return true;
+
+            }
+
+
+
+        }       
+        </script>
+        <body>
+            <form onsubmit="return form()" action="message.html">
+                <input id="U" placeholder="Username" type="text"/><br>
+                <input id="P" placeholder="Password" type="password"/><br>
+                <button  onclick="form()" type="submit">Submit</button>
+            </form>
+            
+
+        </body>
+
+    </head>
+</html>

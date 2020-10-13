@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Introduction To jquery UI</title>
+        <link rel="stylesheet" href="code/tooltip.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <h2>Introduction Of Accordion </h2>
+            <div id="panels">
+                <h3>OMKAR </h3>
+                <p>We are Create a <b>POS </b>
+                We are jsnwfjn wwekjwfnjw nwnwnf nwfnlwenlwnfw</p>
+                
+                <h3>Pankaj</h3>
+                <p>We are Create a <b>POS  nwfwolnwlf
+                    jnwdnwldlwflfwl wnknfwn
+                </b> </p>
+                
+                <h3>Siddhiraj</h3>
+                <p>We are Create a<b>POS </b> </p>
+               
+                
+           </div>
+           
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+            $("#panels").accordion({
+                collapsible:true,
+                event:"mouseover",
+                animate:300,
+                active:0,
+                heightStyle:true,
+                icons:{header:"ui-icon-circle",activeHeader:"ui-icon-minus"}
+            });        
+        </script>
+
+   
+</html>

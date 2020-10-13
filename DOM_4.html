@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Dom Manupulation in jquery Part 4</title>
+        <link rel="stylesheet" href="code/Dom4.css">
+    
+    </head>  
+            
+        
+        <body>
+          
+            <button  id="b1">Add class</button>
+            <button  id="b2">Remove Class</button>
+            <button  id="b3">Toggle Class</button>
+            <button  id="b4">CSS</button>
+            
+            <br>
+            
+            <div id="first" class="my">
+
+                <p id="p1" class="Omkar" value="OmkarBhatuse">This is <b>Bigger</b> para  in Second division </p>
+              
+            </div>
+
+            <div id="second" class="my">
+
+              <p id="p2" class="Omkar" value="OmkarBhatuse">This is <b>Bigger</b> para in  Second division</p>
+            
+          </div>
+
+          
+
+        </body>
+        <script src="js/jquery-3.5.1.js"></script>
+        <script>
+        
+         $(document).ready(function ()
+          {
+              $("#b1").click(function(){
+                  $("#first").addClass("newmyclass newparaclass");
+                });
+                $("#b2").click(function(){
+                  $("#first").removeClass("newmyclass");
+                });
+                $("#b3").click(function(){
+                  $("#first").toggleClass("newmyclass ");
+                });
+                $("#b4").click(function(){
+                    
+                  $("#first").css("font-size", "31px");
+                });
+
+               
+              
+
+
+             
+            
+               
+         });//fuction Closed
+        </script>
+
+   
+</html>

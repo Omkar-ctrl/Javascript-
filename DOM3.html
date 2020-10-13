@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Dom Manupulation in jquery Part 3</title>
+        <link rel="stylesheet" href="code/DOM.css">
+    
+    </head>  
+            
+        
+        <body>
+          
+            <button  id="b1">Append</button>
+            <button  id="b2">After</button>
+            <button  id="b3">Prepend</button>
+            <button  id="b4">Before</button>
+            <button  id="b5">Remove</button>
+            <button  id="b6">Empty</button>
+            <br>
+            
+            <div id="first" class="my">
+
+                <p id="p1" class="Omkar" value="OmkarBhatuse">This is <b>Bigger</b> para 1 </p>
+              
+            </div>
+
+          
+
+        </body>
+        <script src="js/jquery-3.5.1.js"></script>
+        <script>
+        
+         $(document).ready(function ()
+          {
+              $("#b1").click(function(){
+                  $("#first").append("This is <b>Bigger</b> para 2 Append");
+                });
+
+                $("#b2").click(function(){
+                  $("#first").after("This is <b>Bigger</b> para 3 After");
+                }); 
+
+                $("#b3").click(function(){
+                  $("#first").prepend("This is <b>Bigger</b> para 2 Prepend");
+                });
+                
+                $("#b4").click(function(){
+                  $("#first").before("This is <b>Bigger</b> para 2 Before");
+                }); 
+                $("#b5").click(function(){
+                  $("#first").remove();//Delet the division
+                }); 
+                $("#b6").click(function(){
+                  $("#first").empty();//Clear the  content division
+                }); 
+
+
+             
+            
+               
+         });//fuction Closed
+        </script>
+
+   
+</html>

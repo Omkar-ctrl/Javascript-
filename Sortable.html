@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Introduction To jquery UI</title>
+        <link rel="stylesheet" href="code/Sortable.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <h3>Introduction Of Sortable Feature</h3>
+           <div id="Mydiv">
+               <div class="Cube">
+                  <h3>Cube 1</h3>
+               </div>
+               
+               <div class="Cube">
+                  <h3>Cube 2</h3>
+               </div>
+               <div class="Cube">
+                <h3>Cube 3</h3>
+               </div>
+               <img src="black.jpg" width="200px" alt="">
+           </div>
+           
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+            $("#Mydiv").sortable({
+                opacity:0.5,
+                distance:50,
+                delay:0,
+                containment:"parent",
+                cursor:"grabbing",
+            });
+              
+               
+           
+           
+          
+        
+        </script>
+
+   
+</html>

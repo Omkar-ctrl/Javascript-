@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Introduction To jquery UI</title>
+        <link rel="stylesheet" href="code/calender.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <div id="first">
+                <h3>Introduction Of Calender</h3>
+           </div>
+           <input id="Dateinput" placeholder="Click the Date" type="text">
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+        $("#Dateinput").datepicker({
+          numberOfMonths:1,
+          changeYear:true,
+          changeMonth:true,
+          weekHeader:"wk no",
+          showOtherMonths:true,
+          minDate: new Date(2017,0,1),
+          maxDate: new Date(2025,0,1)
+
+          
+         
+
+        });
+            
+        </script>
+
+   
+</html>

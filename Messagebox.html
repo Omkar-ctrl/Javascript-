@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Introduction To  MessageBox jquery UI</title>
+        <link rel="stylesheet" href="code/Message.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <h2>Introduction Of Message Box </h2>
+            <div id="first" class="mys">
+                <h3> Omkar Omkar Omkar Omkar  </h3><br>
+                <button id="btn1">Click The Message</button>
+            </div>
+            <br>
+
+            <div id="message" title="Messagebox" class="mys"> 
+                <h3> It's Just a dummy</h3>
+                <img src="Imgaes/black.jpg"width=200px>
+                <br><button>Click ME</button>
+            </div>
+            
+           
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+            $("#btn1").click(function(){
+               $("#message").dialog({
+                  title:"Omkar",
+                  draggable:true,
+                  resizable:true,
+                  height:300,
+                  width:300,
+                  modal:true,
+                  button:
+                  [
+                    {
+                        text:"Close",
+                        icon:"ui-icon-heart",
+                        click:function(){
+                            $(this).dialog("close");
+                        }
+                     },
+                     {
+                        text:"OK",
+                        icon:"ui-icon-heart",
+                        click:function(){
+                            $(this).dialog("close");
+                        }
+                     }
+                        
+                    ]
+                });
+
+            });
+                   
+        </script>
+
+   
+</html>

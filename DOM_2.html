@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Dom Manupulation in jquery Part 2</title>
+        <link rel="stylesheet" href="code/style.css">
+    
+    </head>  
+    <!-- 
+        text()
+        html()
+        atr()
+        css()
+    -->         
+        
+        <body>
+            <p>Omkar bhatuse</p>
+            <button  id="b1">Set value</button>
+            <button  id="b2">Get value</button>
+            
+            <div id="first" class="my">
+
+                <p id="p1" class="Omkar" value="Omkar">This is <b>Bigger</b> para 1 </p>
+              
+            </div>
+
+          
+
+        </body>
+        <script src="js/jquery-3.5.1.js"></script>
+        <script>
+         $(document).ready(function ()
+          {
+            $("#b1").click(function (){
+            
+            ($("#p1").attr("class","Bhatuse"));
+        //alert($("#p1").attr("class"));
+        });
+            $("#b2").click(function (){
+            
+                alert($("#p1").attr("class"));
+            //alert($("#p1").attr("class"));
+            });
+         });//fuction Closed
+        </script>
+
+   
+</html>

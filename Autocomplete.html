@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Introduction To jquery UI</title>
+        <link rel="stylesheet" href="code/Autocomplete.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <h3>Introduction Of Autocomplete </h3>
+            <div id="first">
+            <label><b>Enter a Favourite City</b></label>
+            <input type="text" name="" id="citytextbox">
+            
+           </div>
+           
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+           // var cities=["Mumbai","Pune","New Delhi","New Jersy",
+                        //"Panjim","New York","Los Angles","Los Santos",
+                        //"Indore","Goa","Ahamedabad","Simla","London" ];
+            $("#citytextbox").autocomplete({
+                source:["Mumbai","Pune","New Delhi","New Jersy",
+                        "Panjim","New York","Los Angles","Los Santos",
+                        "Indore","Goa","Ahamedabad","Simla","London" ]
+
+
+
+
+            },{
+                autofocus:true,
+                delay:0,
+                minLength:2
+            });
+            
+          
+        
+        </script>
+
+   
+</html>

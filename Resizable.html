@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Introduction of Resizable to jquery UI</title>
+        <link rel="stylesheet" href="code/Sortable.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.structure.css">
+        <link rel="stylesheet" href="jqueryui/jquery-ui.theme.css">
+    
+    </head>  
+            
+        
+        <body>
+            <h3>Introduction Of Resizable Interaction</h3>
+           <div id="Mydiv">
+               <img id="img" src="black.jpg" width="200px" alt="">
+           </div>
+           
+        </body>
+       
+        <script src="js/jquery-3.5.1.js"></script>
+        <script src="jqueryui/jquery-ui.js"></script>
+        <script>
+            $("img").resizable({
+                ghost:true,
+                distance:100,
+                aspectratio:true,
+            });
+        </script>
+
+   
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Fade In & Fade Out</title>
+        <script type="text/javascript">
+        var opacity=0;
+        var intervalId=0;
+
+        function fadeOut()
+        {
+           intervalId= setInterval(hide,20);
+        }
+        function hide()
+        {
+            var img=document.getElementById("img");
+            opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity>0)
+            {
+                opacity=opacity-0.1;
+                img.style.opacity=opacity;
+                
+            }
+            else
+            {
+                clearInterval(intervalId);
+            }
+        }
+        
+        function fadeIn()
+        {
+          intervalId=setInterval(show,20);
+        }
+        function show()
+        {
+            var img=document.getElementById("img");
+            opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if(opacity<1)
+            {
+                opacity=opacity+0.1;
+                img.style.opacity=opacity;
+               
+            }
+            }
+            else
+            {
+                clearInterval(intervalId);
+            }
+        }
+        
+        
+        </script>
+        
+
+
+
+
+    </head>
+    <body>
+        <button onclick="fadeOut()" id="FO">Fade Out</button><br><br>
+        <img id="img" src="apple.jpg" width="350"><br>
+        <button onclick="fadeIn()" id="FI">Fade In</button>
+    </body>
+    
+</html>

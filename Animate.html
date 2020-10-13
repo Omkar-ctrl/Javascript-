@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Events in jquery</title>
+        <link rel="stylesheet" href="code/style.css">
+    
+    </head>           
+        </script>
+        <body>
+            <p>Omkar bhatuse</p>
+            <button  id="b1">Click</button>
+            <button  id="b2">Click</button>
+            <button  id="b3">Animate</button>
+            <div id="first" class="my">
+
+                <p>This is para 1 </p>
+                <p>This is para 2 </p>
+            </div>
+            <div id="second" class="my">
+                <p>This is para 3 </p>
+            </div>                      
+           <div id="third" class="my">
+             <ul>
+                 <li>List item 1</li>
+                 <li>List item 2</li>
+                 <li>List item 3</li>
+                 <li>List item 4</li>
+             </ul>
+           </div>
+           <div id="cube" class="cube">
+               <p>CUBE</p>
+                </div>
+
+          
+
+        </body>
+        <script src="js/jquery-3.5.1.js"></script>
+        <script>
+         $(document).ready(function ()
+          {
+            $("#b3").click(function(){
+            
+           $("#cube").animate({
+               color:'green',
+               left : '150px',
+               opacity:'0.9',
+               height:'100px',
+               width:'100px'
+           },1000)
+           
+        });
+          });//fuction Closed
+        </script>
+
+   
+</html>
